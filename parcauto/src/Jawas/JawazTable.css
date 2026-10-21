@@ -1,0 +1,32 @@
+/* Entête du tableau */
+.jawaz-data-table th {
+  font-size: 0.88rem;
+  font-weight: 600;
+  background-color: #f8fafc !important;
+  color: #475569 !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.text-green-header {
+  color: #059669 !important;
+}
+
+.jawaz-data-table td {
+  font-size: 0.9rem;
+  color: #1e293b;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.jawaz-data-table tbody tr:hover {
+  background-color: #f0fdf4;
+}
+
+/* Pagination : Remplacement de l'orange par le vert #059669 */
+.bg-emerald {
+  background-color: #059669 !important;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.3);
+}
+
+.text-emerald {
+  color: #059669 !important;
+}

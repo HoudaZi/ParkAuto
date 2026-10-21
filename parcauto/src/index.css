@@ -1,0 +1,111 @@
+/* @import "tailwindcss"; */
+
+:root {
+  --text: #334155;
+  --text-h: #0F172A;
+  --bg: #ffffff;
+  --border: #E2E8F0;
+  --code-bg: #F1F5F9;
+  --accent: #026523;
+  --accent-bg: rgba(2, 101, 35, 0.1);
+  --accent-border: rgba(2, 101, 35, 0.4);
+  --shadow: rgba(0, 0, 0, 0.05) 0 10px 15px -3px, rgba(0, 0, 0, 0.02) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+/* 1. Fond global unifié avec un dégradé vert très clair / bahat (Corrigé) */
+html, 
+body, 
+#root, 
+.App, 
+main {
+  background: linear-gradient(170deg, #f7fff8 0%, #fafffb 50%, #ffffff 100%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+}
+
+/* 2. Neutraliser les marges et conteneurs Bootstrap pour qu'ils prennent toute la largeur */
+#root {
+  max-width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.container, 
+.container-fluid, 
+.main-content, 
+.page-wrapper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 3. Style de la barre de navigation (Navbar) */
+navbar, .navbar, header {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Typographie */
+h1, h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -0.75px;
+  margin: 20px 0;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+    margin: 16px 0;
+  }
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code, .counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+

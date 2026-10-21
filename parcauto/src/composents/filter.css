@@ -1,0 +1,63 @@
+.filtres-container-card {
+  background: #FFFFFF !important;
+  border-radius: 12px !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.04) !important;
+  padding: 24px !important;
+}
+.filtres-icon-badge {
+  background-color: #DCFCE7;
+  color: #026523;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge-vehicules-count {
+  background-color: #F8FAFC;
+  color: #026523;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #E2E8F0;
+}
+.filtres-container-card input, 
+.filtres-container-card select {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 8px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #0F172A !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.filtres-container-card input:hover, 
+.filtres-container-card select:hover {
+  border-color: #94A3B8 !important;
+}
+.filtres-container-card input:focus, 
+.filtres-container-card select:focus {
+  border-color: #026523 !important;
+  box-shadow: 0 0 0 3px rgba(2, 101, 35, 0.12) !important;
+  outline: none !important;
+  background-color: #FFFFFF !important;
+}
+.btn-reset-filters {
+  background-color: #F8FAFC !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #475569 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+}
+.btn-reset-filters:hover {
+  background-color: #F1F5F9 !important;
+  color: #026523 !important;
+  border-color: #026523 !important;
+}

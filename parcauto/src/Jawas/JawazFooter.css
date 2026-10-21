@@ -1,0 +1,83 @@
+.jawaz-footer-container {
+  border: 1px solid #f1e5d5;
+  min-height: 80px;
+  background-color: #ffffff;
+}
+
+.jawaz-footer-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(245, 158, 11, 0.08) 55%,
+    rgba(237, 122, 0, 0.22) 100%
+  );
+  pointer-events: none;
+}
+
+/* Bouton Retour contourné */
+.btn-jawaz-back {
+  border-color: #f97316 !important;
+  color: #ea580c !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(234, 88, 12, 0.08);
+}
+
+.btn-jawaz-back:hover {
+  background-color: #fff7ed !important;
+  border-color: #ea580c !important;
+  color: #c2410c !important;
+  transform: translateX(-3px);
+}
+
+/* Séparateur vertical entre les deux logos */
+.jawaz-footer-divider {
+  width: 1px;
+  height: 38px;
+  background-color: #cbd5e1;
+}
+
+/* Style des images des logos */
+.adm-logo-wrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.adm-logo-img {
+  height: 100%;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.jawaz-text-logo-wrapper {
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.jawaz-text-logo-img {
+  height: 100%;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 576px) {
+  .jawaz-footer-container {
+    padding: 1.25rem !important;
+  }
+
+  .btn-jawaz-back {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .jawaz-footer-container > div {
+    justify-content: center !important;
+  }
+}

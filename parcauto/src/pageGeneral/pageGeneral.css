@@ -1,0 +1,7 @@
+.hover-flip {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.hover-flip:hover {
+    animation: flipInX 0.7s ease-in-out both;
+}

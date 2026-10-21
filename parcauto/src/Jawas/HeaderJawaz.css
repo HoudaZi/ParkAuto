@@ -1,0 +1,174 @@
+.jawaz-banner-wrapper {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.jawaz-header-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 250px;
+  border-radius: 0px;
+  background-image: 
+    linear-gradient(
+      135deg,
+      rgba(248, 255, 248, 0.96) 50%,
+      rgba(242, 255, 240, 0.88) 30%,
+      rgba(255, 255, 255, 0.25) 75%,
+      rgba(5, 150, 105, 0.12) 100%
+    ),
+    url("../assets/jawazChat.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.jawaz-header-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.jawaz-header-card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  width: 250px;
+  height: 150px;
+  background: linear-gradient(
+    135deg,
+    rgba(5, 150, 105, 0.25) 0%,
+    rgba(5, 150, 105, 0.03) 70%
+  );
+  transform: rotate(-15deg);
+  border-radius: 40%;
+  pointer-events: none;
+}
+
+.jawaz-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: linear-gradient(145deg, #ffffff, #f0fdf4);
+  border: 2px solid #059669;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.22);
+}
+
+.jawaz-logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.jawaz-title {
+  color: #0f172a;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.text-orange {
+  color: #1a7202 !important;
+  font-size: 43px;
+}
+
+.jawaz-subtitle {
+  max-width: 600px;
+  color: #475569 !important;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.jawaz-actions-group {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.jawaz-month-picker {
+  min-height: 42px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+.jawaz-month-input {
+  width: 140px;
+  background: transparent !important;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.jawaz-month-input:focus {
+  box-shadow: none;
+}
+
+.btn-jawaz-refresh {
+  min-height: 42px;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #059669, #047857) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.22);
+  transition: all 0.25s ease;
+}
+
+.btn-jawaz-refresh:hover:not(:disabled) {
+  background: linear-gradient(135deg, #047857, #065f46) !important;
+  transform: translateY(-2px);
+}
+
+.btn-jawaz-export {
+  min-height: 42px;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #09780f, #037e16) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  transition: all 0.25s ease;
+}
+
+.btn-jawaz-export:hover {
+  background: linear-gradient(135deg, #059669, #047857) !important;
+  transform: translateY(-2px);
+}
+
+.jawaz-spin {
+  animation: jawaz-spin-animation 0.9s linear infinite;
+}
+
+@keyframes jawaz-spin-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .jawaz-header-overlay {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .jawaz-actions-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .jawaz-month-picker,
+  .jawaz-month-input,
+  .btn-jawaz-refresh,
+  .btn-jawaz-export {
+    width: 100%;
+  }
+}
